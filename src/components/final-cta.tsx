@@ -1,16 +1,27 @@
-import { Button } from "@/components/ui/button"
+'use client';
+
+import { Button } from '@/components/ui/button';
+import dynamic from 'next/dynamic';
+
+const PdfViewer = dynamic(() => import('./pdf-viewer'), {
+  ssr: false,
+});
 
 export function FinalCTA() {
   return (
-    <section id="order" className="py-16 sm:py-24 px-4 bg-gradient-to-r from-primary to-primary/90">
+    <section
+      id="order"
+      className="py-16 sm:py-24 px-4 bg-gradient-to-r from-primary to-primary/90"
+    >
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
           Siap Mengubah Bisnis Digital Anda?
         </h2>
 
         <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Bergabunglah bersama ribuan pengusaha yang sudah membuktikan strategi dalam e-book ini.
-          Waktunya membawa bisnis Anda ke level berikutnya — mulai hari ini.
+          Bergabunglah bersama ribuan pengusaha yang sudah membuktikan strategi
+          dalam e-book ini. Waktunya membawa bisnis Anda ke level berikutnya —
+          mulai hari ini.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -29,10 +40,13 @@ export function FinalCTA() {
           </Button>
         </div>
 
+        <PdfViewer />
+
         <p className="text-sm text-primary-foreground/80">
-          Garansi uang kembali 30 hari • Akses seumur hidup • Unduh instan dalam format PDF
+          Garansi uang kembali 30 hari • Akses seumur hidup • Unduh instan dalam
+          format PDF
         </p>
       </div>
     </section>
-  )
+  );
 }
