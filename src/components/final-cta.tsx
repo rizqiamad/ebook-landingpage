@@ -1,15 +1,6 @@
-'use client'
-
 import { Button } from "@/components/ui/button"
-import dynamic from "next/dynamic"
-import { useState } from "react"
-
-const PdfModal = dynamic(() => import("./pdf-modal"), {
-  ssr: false
-})
 
 export function FinalCTA() {
-  const [open, setOpen] = useState<boolean>(false)
   return (
     <section id="order" className="py-16 sm:py-24 px-4 bg-gradient-to-r from-primary to-primary/90">
       <div className="mx-auto max-w-4xl text-center">
@@ -30,7 +21,6 @@ export function FinalCTA() {
             Dapatkan Sekarang – Rp 449.000
           </Button>
           <Button
-            onClick={() => setOpen(true)}
             size="lg"
             variant="outline"
             className="cursor-pointer border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 text-base bg-transparent"
@@ -38,12 +28,6 @@ export function FinalCTA() {
             Lihat Cuplikan Bab
           </Button>
         </div>
-
-        <PdfModal
-          show={open}
-          onClose={() => setOpen(false)}
-          pdfUrl="/dummy.pdf"
-        />
 
         <p className="text-sm text-primary-foreground/80">
           Garansi uang kembali 30 hari • Akses seumur hidup • Unduh instan dalam format PDF
