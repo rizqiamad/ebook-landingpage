@@ -1,11 +1,11 @@
-import { Hero } from "@/components/hero"
-import { BookPreview } from "@/components/book-preview"
-import { Benefits } from "@/components/benefits"
-import { Testimonials } from "@/components/testimonials"
-import { AuthorBio } from "@/components/author-bio"
-import { FAQ } from "@/components/faq"
-import { FinalCTA } from "@/components/final-cta"
-import { Footer } from "@/components/footer"
+import { Hero } from '@/components/hero';
+import { BookPreview } from '@/components/book-preview';
+import { Benefits } from '@/components/benefits';
+import { Testimonials } from '@/components/testimonials';
+import { AuthorBio } from '@/components/author-bio';
+import { FAQ } from '@/components/faq';
+import { FinalCTA } from '@/components/final-cta';
+import { Footer } from '@/components/footer';
 
 export default function Home() {
   return (
@@ -19,5 +19,5 @@ export default function Home() {
       <FinalCTA />
       <Footer />
     </main>
-  )
+  );
 }
