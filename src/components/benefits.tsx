@@ -5,10 +5,12 @@ export function Benefits() {
         {/* Judul */}
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Kenapa Harus Memilih E-Book Ini?
+            Kenapa Lo Harus Memilih E-Book Ini?
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Bergabunglah dengan ribuan pembaca yang telah mengubah cara mereka membangun dan mengembangkan bisnis digital.
+            Benefit ini bisa lo rasakan asal ada kemauan diri lo dalam berubah.
+            E-book ini akan berguna bagi mereka yang lapar akan aksi nyata dan
+            bukan hanya omon-omon belaka
           </p>
         </div>
 
@@ -16,40 +18,28 @@ export function Benefits() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
-              icon: "⚡",
-              title: "Strategi yang Bisa Langsung Diterapkan",
+              icon: '⚡',
+              title: 'Strategi yang Bisa Langsung Diterapkan',
               description:
-                "Setiap bab berisi langkah-langkah praktis yang bisa langsung Anda gunakan untuk mempercepat hasil.",
+                'Setiap bab berisi langkah-langkah praktis yang bisa langsung lo gunakan untuk mempercepat hasil.',
             },
             {
-              icon: "🎯",
-              title: "Teruji dan Terbukti",
+              icon: '🎯',
+              title: 'Berdasarkan pengalaman',
               description:
-                "Berdasarkan studi kasus nyata dan telah digunakan oleh ribuan pelaku bisnis yang sukses.",
+                'Berdasarkan studi kasus nyata dan telah digunakan oleh ribuan pelaku bisnis yang sukses.',
             },
             {
-              icon: "📈",
-              title: "Pertumbuhan Lebih Cepat",
+              icon: '🔒',
+              title: 'Akses Seumur Hidup',
               description:
-                "Percepat kemajuan Anda dengan rahasia dan taktik yang memotong kurva pembelajaran bertahun-tahun.",
+                'Bayar sekali, nikmati akses permanen ke e-book ini yang juga bisa langsung lo download.',
             },
             {
-              icon: "🔒",
-              title: "Akses Seumur Hidup",
+              icon: '🚀',
+              title: 'Bonus Eksklusif',
               description:
-                "Bayar sekali, nikmati akses permanen ke e-book ini beserta semua pembaruan di masa mendatang.",
-            },
-            {
-              icon: "💡",
-              title: "Wawasan dari Ahli",
-              description:
-                "Belajar langsung dari para pemimpin industri dan praktisi terbaik yang membagikan pengalaman nyata mereka.",
-            },
-            {
-              icon: "🚀",
-              title: "Bonus Eksklusif",
-              description:
-                "Termasuk template, checklist, dan alat bantu tambahan untuk memudahkan penerapan strategi Anda.",
+                'Termasuk template, checklist, dan alat bantu tambahan untuk memudahkan penerapan strategi lo.',
             },
           ].map((benefit, idx) => (
             <div
@@ -58,7 +48,9 @@ export function Benefits() {
             >
               <div className="text-4xl flex-shrink-0">{benefit.icon}</div>
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">{benefit.title}</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">
+                  {benefit.title}
+                </h3>
                 <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                   {benefit.description}
                 </p>
@@ -68,5 +60,5 @@ export function Benefits() {
         </div>
       </div>
     </section>
-  )
+  );
 }

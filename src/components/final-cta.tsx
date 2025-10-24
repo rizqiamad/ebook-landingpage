@@ -1,11 +1,11 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
-const PdfViewer = dynamic(() => import('./pdf-viewer'), {
-  ssr: false,
-});
+// const PdfViewer = dynamic(() => import('./pdf-viewer'), {
+//   ssr: false,
+// });
 
 export function FinalCTA() {
   return (
@@ -15,13 +15,14 @@ export function FinalCTA() {
     >
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-          Siap Mengubah Bisnis Digital Anda?
+          Siap melihat masa depan cerah?
         </h2>
 
         <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Bergabunglah bersama ribuan pengusaha yang sudah membuktikan strategi
-          dalam e-book ini. Waktunya membawa bisnis Anda ke level berikutnya —
-          mulai hari ini.
+          Ayo kita memanfaatkan waktu yang ada saat ini dengan sebaik-baiknya.
+          Lo dan gue sama-sama punya masa depan, tapi masa depan seperti apa
+          yang bakal kita miliki pasti berbeda. Tergantung apa yang bisa lo
+          korbankan hari ini
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -29,7 +30,7 @@ export function FinalCTA() {
             size="lg"
             className="cursor-pointer bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-base px-8"
           >
-            Dapatkan Sekarang – Rp 449.000
+            Dapatkan Sekarang – Rp 49.000
           </Button>
           <Button
             size="lg"
@@ -40,12 +41,7 @@ export function FinalCTA() {
           </Button>
         </div>
 
-        <PdfViewer />
-
-        <p className="text-sm text-primary-foreground/80">
-          Garansi uang kembali 30 hari • Akses seumur hidup • Unduh instan dalam
-          format PDF
-        </p>
+        {/* <PdfViewer /> */}
       </div>
     </section>
   );

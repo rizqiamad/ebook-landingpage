@@ -6,8 +6,8 @@ export function AuthorBio() {
           <div className="flex flex-col sm:flex-row gap-8 items-center">
             {/* Avatar */}
             <div className="flex-shrink-0">
-              <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center text-5xl">
-                👥
+              <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center text-5xl overflow-hidden">
+                <img src="/diko.jpeg" alt="Adiko Trioka" />
               </div>
             </div>
 
@@ -17,21 +17,31 @@ export function AuthorBio() {
                 Kenali Penulis Anda
               </h3>
               <p className="text-accent font-semibold mb-4">
-                Praktisi Bisnis Digital & Strategi Pertumbuhan
+                Praktisi Digital Marketing & Budak Corporate
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Dengan pengalaman gabungan lebih dari 15 tahun di dunia bisnis digital, kami telah membantu ribuan
-                pengusaha membangun dan mengembangkan usaha online yang menguntungkan. Strategi kami telah menghasilkan
-                lebih dari $50 juta pendapatan kolektif bagi klien dan komunitas kami.
-              </p>
+                {' '}
+                Dalam beberapa tahun terakhir, <b>Adiko Trioka</b> menempuh
+                perjalanan yang tidak biasa. Bukan lewat bangku kuliah,
+                melainkan lewat kerja nyata, eksperimen, dan pembelajaran
+                mandiri. Di usia 20 tahun, ketika banyak orang masih mencari
+                arah, ia justru sudah menapaki karier pertamanya di dunia
+                digital marketing dan terus berjuang untuk meningkatkan nilai
+                dirinya setiap hari.{' '}
+              </p>{' '}
               <p className="text-muted-foreground leading-relaxed">
-                E-book ini adalah hasil dari seluruh perjalanan, eksperimen, dan pembelajaran kami di lapangan. Kami
-                ingin berbagi pengetahuan ini agar Anda bisa mencapai kesuksesan dengan lebih cepat dan terarah.
+                {' '}
+                <i>The Gambit Playbook</i> lahir dari perjalanan itu — kumpulan
+                strategi, kesalahan, dan pelajaran berharga yang dibangun dari
+                pengalaman langsung di lapangan. Buku ini bukan teori kosong,
+                tapi panduan praktis untuk siapa pun yang ingin mulai melangkah,
+                berani berkorban sedikit hari ini demi masa depan yang lebih
+                besar.{' '}
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
