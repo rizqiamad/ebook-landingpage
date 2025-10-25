@@ -35,7 +35,7 @@ export function Hero() {
               <Link href={'/#order'} scroll={true}>
                 <Button
                   size="lg"
-                  className="cursor-pointer bg-accent hover:bg-accent/90 text-accent-foreground font-semibold w-full sm:w-auto"
+                  className="cursor-pointer bg-accent hover:bg-accent/70 text-accent-foreground font-semibold w-full sm:w-auto"
                 >
                   Dapatkan Playbook-nya
                 </Button>

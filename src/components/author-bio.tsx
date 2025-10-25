@@ -5,8 +5,8 @@ export function AuthorBio() {
         <div className="bg-card rounded-2xl p-8 sm:p-12 border border-border">
           <div className="flex flex-col sm:flex-row gap-8 items-center">
             {/* Avatar */}
-            <div className="flex-shrink-0">
-              <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center text-5xl overflow-hidden">
+            <div className="shrink-0">
+              <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-linier-to-br from-accent to-secondary flex items-center justify-center text-5xl overflow-hidden">
                 <img src="/diko.jpeg" alt="Adiko Trioka" />
               </div>
             </div>
@@ -14,7 +14,7 @@ export function AuthorBio() {
             {/* Bio Content */}
             <div className="flex-1 text-center sm:text-left">
               <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
-                Kenali Penulis Anda
+                Tentang Penulis
               </h3>
               <p className="text-accent font-semibold mb-4">
                 Praktisi Digital Marketing & Budak Corporate

@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 export function FinalCTA() {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [error, setError] = useState<string | null>('');
@@ -15,7 +16,7 @@ export function FinalCTA() {
     e.preventDefault();
     setError(null);
 
-    if (!email.trim() || !phone.trim()) {
+    if (!email.trim() || !phone.trim() || !name.trim()) {
       setError('Tolong isi semua data agar transaksi bisa dilanjutkan.');
       return;
     }
@@ -40,6 +41,7 @@ export function FinalCTA() {
         gross_amount: 49000,
       },
       customer_details: {
+        first_name: name,
         email,
         phone,
       },
@@ -87,6 +89,22 @@ export function FinalCTA() {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5 flex flex-col">
+            {/* Input Nama */}
+            <div className="space-y-2 text-left">
+              <Label htmlFor="name" className="text-primary-foreground/90">
+                Nama
+              </Label>
+              <Input
+                id="name"
+                type="text"
+                placeholder="Adiko Trioka"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                className="bg-white/10 border-white/20 text-primary-foreground placeholder:text-black/20 focus:ring-accent"
+              />
+            </div>
+
             {/* Input Email */}
             <div className="space-y-2 text-left">
               <Label htmlFor="email" className="text-primary-foreground/90">
